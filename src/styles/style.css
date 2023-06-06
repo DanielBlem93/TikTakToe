@@ -1,0 +1,51 @@
+body {
+    background-color: #3a3a3a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+h1{
+    color: white;
+    text-align: center;
+}
+
+table {
+    color: rgb(255, 0, 0);
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+td {
+    color: rgb(255, 0, 0);
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    font-size: 48px;
+    border: 2px solid rgb(255, 255, 255);
+}
+td:hover{
+    background-color: rgba(240, 248, 255, 0.349);
+}
+
+#content {
+    position: relative;
+}
+
+.winning-line {
+    position: absolute;
+    top: 0;
+    height: 5px;
+    background-color: rgba(0, 255, 76, 0.616);
+    transform-origin: left center;
+    transition: width 0.3s, transform 0.3s;
+    z-index: 999;
+}
+
+button{
+    color: white;
+    padding: 10px;
+    background-color: rgb(109, 109, 109);
+    border-radius: 5px;
+    
+}
