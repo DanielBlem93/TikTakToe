@@ -27,15 +27,13 @@ function render() {
 
     const winner = checkWinner();
     if (winner) {
-        console.log(`Spieler ${winner} hat gewonnen!`);
+        
         const winningCombination = getWinningCombination(winner);
         if (winningCombination) {
             drawWinningLine(winningCombination);
+            console.log(`Spieler ${winner} hat gewonnen!`);
         }
-        const resetButton = document.createElement('button');
-        resetButton.innerText = 'Nochmal spielen';
-        resetButton.addEventListener('click', resetGame);
-        contentDiv.appendChild(resetButton);
+        
     }
 }
 
@@ -61,7 +59,7 @@ function addSymbol(index) {
 
         const winner = checkWinner();
         if (winner) {
-            console.log(`Spieler ${winner} hat gewonnen!`);
+            alert(`Spieler ${winner} hat gewonnen!`);
             const winningCombination = getWinningCombination(winner);
             if (winningCombination) {
                 drawWinningLine(winningCombination);
